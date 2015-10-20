@@ -1,90 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project 3: Landing Page</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Project 3: Landing Page---[Bootstrapped]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </head>
 <body>
 
 	<header>
-         <img src="http://placehold.it/500x200">		
+         <img class="img-responsive" src="assets/Image/coverpicture.png" style="width:100%;">		
 
 	</header>
 
+    <div class="container-fluid">
 	<content>	
          <div class="row">
 
-         	  <div class="column">
-         	  	<h1>My Super Awesome Protector</h1>
-         	  	
-         	  	<img src="http://placehold.it/300x150">
+         	    <div class="col-md-4 col-sm-4 col-xs-12" style="width:30%">
+         	  	   <h1>Protector Generation 1</h1>
+                   <img class="img-responsive" src="assets/Image/Protector.jpg">
+                
+                    <p>The Protector is a wearable device to alarm you whenever your personal stuff is missing. It's based on RFID connection. 
+                     </p>   
+                </div>
 
-         	  	<p>The Protector is a wearable device to alarm you whenever your personal stuff is missing. It's based on RFID connection. 
+                <div class="col-md-4 col-sm-4 col-xs-12" style="width:20%">
+                    <h2>Get more information about the Protector</h2>
+                </div>
+
+               <div class="col-md-4 col-sm-4 col-xs-12" style="width:40%">
+                   <form id="cta">
+                        <input class="tf name no-margin" type="text" name="firstname" placeholder="first Name">
+                        <input class="tf name no-margin" type="text" name="lastname" placeholder="Last Name">
+                        <input class="tf" type="email" name="emailadress" placeholder="Email address">
+
+                        <label>Date of Birth</label>
+                        <select name="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select> / 
+                        <select name="day"></select> /
+                        <select name="year"></select>
+                        <format>month/day/year</format>
 
 
-
-         	   </p>	
-
-
-
-
-         	  </div>
-
-
-         	  <div class="column">
-         	  	<h2>Contact Information</h2>
-
-         	  	<form>
-         	  		<input type="text" name="first name" placeholder="first name">
-         	  		<input type="text" name="last name" placeholder="last name">
-         	  		<input type="email" nmae="email adress">
-
-         	  		<label>Date of Birth</label>
-         	  		<select name="month">
-         	  			<option value="1">1</option>
-         	  			<option value="2">2</option>
-         	  			<option value="3">3</option>
-         	  			<option value="4">4</option>
-         	  			
+                        <label>Are you student?</label>
+                        <input type="radio" name="Student" value="Student">Student
+                        <input type="radio" name="Not student" value="Not student">Not student
+                            
+                        <br>
+                        <label>Select all of items you have lost before:</label>
+                        <input type="checkbox" name="Lost item" value="Smartphone">Smartphone
+                        <input type="checkbox" name="Lost item" value="Keys">Keys
+                        <input type="checkbox" name="Lost item" value="Paperwork">Paperwork
+                        <input type="checkbox" name="Lost item" value="Paperwork">Paperwork
+                        <input type="checkbox" name="Lost item" value="Sunglasses">Sunglasses
+                        <input type="checkbox" name="Lost item" value="Purse/Wallet">Purse/Wallet
+                        <input type="checkbox" name="Lost item" value="Gloves">Gloves
+                        <input type="checkbox" name="Lost item" value="Clothing">Clothing
+                        <input type="checkbox" name="Lost item" value="Umbrella">Umbrella
+                        <input type="checkbox" name="Lost item" value="Book">Book
+                        <input type="checkbox" name="Lost item" value="Laptop">Laptop
+                        <input type="checkbox" name="Lost item" value="Bank card">Bank card
+                        <br>
 
 
-         	  	</form>
+                        <input class="submitBtn" type="submit" value="Submit">
+                    </form>
+              </div>
+            </div>
 
-
-
-
-         	  </div>
- 
 
         </div>
-        
-        <div class="row">
+            <div class="row">
 
         	<ul>
-        		<li>
-        			<img src="">
-
-        			Feature 1</li>
-        	    <li>
-        	    	<img src="">
-
-        	    	Feature 2</li>
-        	    <li>
-        	    	<img src="">
-
-        	    	Feature 3</li>
-
-
-
-
-        	</ul>
-
-
-
-        </div>
-
-
+                <li>
+                    <img src="http://placehold.it/50x50">
+                    Feature 1
+                    <p>Here is some text about this feature</p>
+                </li>
+                <li>
+                    <img src="http://placehold.it/50x50">
+                    Feature 2
+                    <p>Here is some text about this feature</p>
+                </li>
+                <li>
+                    <img src="http://placehold.it/50x50">
+                    Feature 3
+                    <p>Here is some text about this feature</p>
+                </li>
+            </ul>
+            </div>
+        <div>
     </content>
+    </div>
+
+    <footer>
+        Footer
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+
+        var minYear = new Date().getFullYear() - 10,
+            day = $('select[name="day"]'),
+            year = $('select[name="year"]');
+
+        for(var i = 1; i <= 31; i++){
+            day.append( $("<option></option>").attr("value", i).text(i) );
+        };
+
+        for( ; minYear >= 1949; minYear--){
+            year.append( $("<option></option>").attr("value", minYear).text(minYear) );
+        };
+
+    });
+    </script>
 
 
 
