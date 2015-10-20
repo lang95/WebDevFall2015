@@ -4,5 +4,63 @@
 </head>
 <body>
 
+<h1>About me page</h1>
+<h2>About you page</h2>
+<h3>ABout her page</h3>
+
+
+<p>Hey, My Name is Lang</p>
+<ul>
+	<li>list item 1</li>
+
+
+</ul>
+
+<ul>
+ <li>list item 2</li>
+
+<!-- # ==ID -->
+<!-- , ===CLASS -->
+
+
+
+</ul>
+
+
+<ul>
+     <li>list item 3</li>
+
+</ul>
+
+
+
+<form id="sayHi">
+       <input id="firstname" type="text" name="name"> 
+       <input type="submit" value="submit">
+</form>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript">
+
+  $(function(){
+
+	$("#sayHi").on("submit", function (e)  {    
+
+		e.preventDefault();
+
+		var firstName = $("#firstname").val();
+
+		alert("Hello, " + firstName); 
+
+	});
+ 
+ });
+
+</script>
+
+
+
+
 </body>
 </html>
