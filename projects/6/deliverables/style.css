@@ -1,0 +1,36 @@
+body {
+  background: rgb(221,14, 73);
+}
+
+.container {
+  width: 760px;
+  margin: 0 auto;
+}
+.container h1{  
+  -webkit-transform: rotate(-20deg);
+  position: absolute;
+  font-weight: 800
+   
+
+}
+.posts.post {
+  border: 1px solid hotpink;
+  padding: 15px;
+  margin: 0 0 15px 0;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.posts.body {
+  font-size: 17px;
+  padding-bottom: 30px;
+  text-indent: 15px;
+}
+
+.postPage footer a {
+  color: hotpink; 
+}
