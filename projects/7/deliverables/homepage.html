@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Phonebook</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+
+  <body>
+		<div class="container-fluid">
+			<div id="header" class="navbar">
+				<h1 class="text-center"> The Phonebook App </h1>
+			</div>
+
+			<div id="info" class="col-md-12 col-sm-12 col-xs-12">
+				<p> Welcome to the Phonebook App! Here you'll be able to search for contacts, view all contacts, and edit your phonebook! Enjoy!</p>
+			</div>
+
+			<div id="search_form" class="col-md-12 col-sm-12 col-xs-12">
+				<div class="text-center">
+					<p>Find a person's contact information by first or last name</p>
+                    <form action="searchresults.html" method="GET">
+					<input id="search_name" class="tf name no-margin" type="text" name="search_name" placeholder="Enter Name Here">
+					<input id="submitButton" class="submitButton" type="submit" value="Search">
+                    </form>
+                </div>
+			</div>
+
+			<div id="display_all" class="col-md-12 col-sm-12 col-xs-12">
+				<div class="text-center">
+					<p> Or display all the contacts information:</p>
+					<input id="display_all_button" class="SubmitButton" type="submit" value="Display All">
+				</div>
+			</div>
+
+
+			<div id="footer" class="navbar">
+				<h3>Footer</h3>
+			</div>
+
+		<script type="text/javascript">
+		$.ajax({
+			url: 'api/v1/phonebook/data.json',
+			method: 'GET'
+		}).then(function(data) {
+			
+            var search_word = document.getElementById('search_name').value;
+            console.log("found:" + search_word);
+            findName(search_word);
+			displayAll(data);
+        });
+
+
+		function displayAll(data) {
+			$('#display_all_button').on('click', function() {
+				console.log("clicked!");
+				window.location.href = "show_all.html";
+			})
+		};
+		</script>
+
+	</body>
